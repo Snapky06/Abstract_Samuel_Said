@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 
-public class AplicacionSudoku {
+public class SudokuApp {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             JFrame ventana = new JFrame("Sudoku Mejorado");
@@ -91,7 +91,7 @@ class ModeloSudoku {
         }
         int nf = (c == 8) ? f + 1 : f;
         int nc = (c == 8) ? 0 : c + 1;
-        List<Integer> nums = new ArrayList<>();
+        ArrayList<Integer> nums = new ArrayList<>();
         for (int i = 1; i <= 9; i++) nums.add(i);
         Collections.shuffle(nums);
         for (int v : nums) {
